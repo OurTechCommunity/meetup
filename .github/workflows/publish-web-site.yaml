@@ -1,0 +1,32 @@
+name: Publish to GitHub Pages
+on:
+    push:
+        branches:
+            - main
+        paths:
+            - ".github/workflows/publish-web-site.yaml"
+            - "static/**"
+            - "**.html"
+            - robots.txt
+            - CNAME
+
+    workflow_dispatch: # Allows manual triggering of workflow
+
+jobs:
+    publish-web-site:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+
+            - name: Move files into the `dist` directory
+              run: |
+                  mkdir dist
+                  mv static CNAME *.html robots.txt dist
+
+            - name: Deploy to GitHub Pages
+              uses: JamesIves/github-pages-deploy-action@v4.3.3
+              with:
+                  branch: gh-pages
+                  folder: dist
+                  clean: true
