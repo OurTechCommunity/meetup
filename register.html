@@ -3,7 +3,11 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+		/>
 		<meta
 			name="keywords"
 			content="otc, meetup, OTC MeetUp, Our Tech Community"
@@ -29,6 +33,11 @@
 			property="twitter:image"
 			content="https://meetup.ourtech.community/static/img/og-img/register.png"
 		/>
+
+		<script>
+			if (screen.width < "760")
+				window.location = "https://forms.gle/WWDhMrZ8RmXXJKst8";
+		</script>
 
 		<script defer src="static/js/script.js"></script>
 
