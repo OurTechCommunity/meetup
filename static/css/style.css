@@ -188,8 +188,33 @@ p {
 	border: none;
 }
 
+table {
+	border-collapse: collapse;
+	overflow: scroll;
+}
+
+th {
+	border-bottom: 1px solid #fafafa;
+	padding: 0.5em;
+}
+
+td {
+	padding: 0.5em 0.5em 1em 0.5em;
+}
+
+tr td:first-of-type {
+	padding-right: 1em;
+}
+
+thead th:last-of-type,
+tr td:last-of-type {
+	padding-left: 2em;
+	border-left: 1px solid #fafafa;
+}
+
 footer {
 	margin: 2em 0.5em;
+	text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
