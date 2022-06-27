@@ -142,7 +142,7 @@ h2 {
 	border-bottom: 1px solid #424242;
 }
 
-.event-detail:last-of-type {
+.last-event-detail {
 	margin-bottom: 1.5em;
 }
 
@@ -257,6 +257,10 @@ footer {
 
 .clickable {
 	cursor: pointer;
+}
+
+.no-border {
+	border: none;
 }
 
 /* ======================================================= BURGER MENU ===================================================== */
