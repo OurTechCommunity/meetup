@@ -199,7 +199,16 @@ th {
 }
 
 td {
-	padding: 0.5em 0.5em 1em 0.5em;
+	padding: 1em;
+}
+
+tbody tr:first-child td {
+	padding-top: 2em;
+}
+
+tr td:first-child {
+	text-align: center;
+	width: 10rem;
 }
 
 tr td:first-of-type {
