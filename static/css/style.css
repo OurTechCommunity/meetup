@@ -346,3 +346,9 @@ body::-webkit-scrollbar-thumb {
 	background-color: #616161;
 	border-radius: 2px;
 }
+
+/* meetup */
+
+ol.aligned {
+	margin-left: 1.25em;
+}
