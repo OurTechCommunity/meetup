@@ -86,7 +86,7 @@ h2 {
 	box-shadow: 0 0 8px #bdbdbd;
 }
 
-#white-bg-cta {
+.white-bg-cta {
 	color: black;
 	background-color: #e0e0e0;
 	margin: 1em 0.5em;
@@ -96,6 +96,15 @@ h2 {
 	font-size: clamp(21px, 3vw, 30px);
 	text-decoration: none;
 	text-align: center;
+}
+
+.white-bg-cta-small {
+	color: black;
+	background-color: #e0e0e0;
+	padding: 0.25em 0.5em;
+	border-radius: 20px;
+	font-size: clamp(12px, 1.5vw, 18px);
+	text-decoration: none;
 }
 
 .black-bg-cta {
