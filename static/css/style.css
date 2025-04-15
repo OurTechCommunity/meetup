@@ -161,9 +161,10 @@ h2 {
 	gap: 1em;
 }
 
-.event-grid img {
-	width: 100%;
+.event-grid :is(img, video) {
+	margin: 0 auto;
 	max-width: 90vw;
+	max-height: 100vh;
 	border-radius: 5px;
 }
 
