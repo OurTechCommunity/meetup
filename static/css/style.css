@@ -157,7 +157,6 @@ h2 {
 
 .event-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 	gap: 1em;
 }
 
